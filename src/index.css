@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand-blue: #1a5fb4;
+  --color-brand-blue-dark: #134a8f;
+  --color-brand-blue-light: #e8f2fc;
+  --color-brand-green: #2d9d5c;
+  --color-brand-green-dark: #1f7a45;
+  --color-brand-green-light: #e6f5ec;
+  --color-surface: #f5f7fa;
+  --color-surface-muted: #e8ecf0;
+  --color-text: #1a2332;
+  --color-text-muted: #5a6578;
+  --font-sans: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    @apply bg-white text-text font-sans antialiased;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-blue;
+  }
+}

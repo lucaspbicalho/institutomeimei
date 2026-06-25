@@ -1,0 +1,57 @@
+export interface NavLink {
+  label: string
+  href: string
+}
+
+export interface StatItem {
+  value: number
+  suffix?: string
+  label: string
+}
+
+export interface Project {
+  id: string
+  title: string
+  description: string
+  image: string
+  imageAlt: string
+  tag: string
+}
+
+export interface HelpOption {
+  id: string
+  title: string
+  description: string
+  icon: 'heart' | 'hand' | 'gift' | 'users'
+  cta: string
+  href: string
+}
+
+export interface Testimonial {
+  id: string
+  quote: string
+  author: string
+  role: string
+}
+
+export interface GalleryImage {
+  id: string
+  src: string
+  alt: string
+  caption?: string
+}
+
+export interface NewsArticle {
+  id: string
+  title: string
+  excerpt: string
+  date: string
+  image: string
+  imageAlt: string
+  href: string
+}
+
+export interface FooterLinkGroup {
+  title: string
+  links: NavLink[]
+}
