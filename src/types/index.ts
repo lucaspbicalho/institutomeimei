@@ -7,6 +7,7 @@ export interface StatItem {
   value: number
   suffix?: string
   label: string
+  formatLocale?: boolean
 }
 
 export interface Project {
@@ -50,6 +51,8 @@ export interface NewsArticle {
   imageAlt: string
   href: string
 }
+
+// News section removed per site update — type kept for future use
 
 export interface FooterLinkGroup {
   title: string

@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import { Link } from 'react-router-dom'
 
 type ButtonVariant = 'primary' | 'secondary' | 'outline'
 
@@ -21,6 +22,10 @@ const variantStyles: Record<ButtonVariant, string> = {
     'border-2 border-brand-blue text-brand-blue hover:bg-brand-blue-light',
 }
 
+function isInternalRoute(href: string) {
+  return href.startsWith('/') && !href.startsWith('//')
+}
+
 export function Button({
   children,
   href,
@@ -36,6 +41,19 @@ export function Button({
   const styles = `${base} ${variantStyles[variant]} ${className}`
 
   if (href) {
+    if (isInternalRoute(href)) {
+      const [path, hash] = href.split('#')
+      return (
+        <Link
+          to={hash ? { pathname: path || '/', hash: `#${hash}` } : path}
+          className={styles}
+          aria-label={ariaLabel}
+        >
+          {children}
+        </Link>
+      )
+    }
+
     return (
       <a href={href} className={styles} aria-label={ariaLabel}>
         {children}

@@ -5,9 +5,15 @@ interface AnimatedCounterProps {
   value: number
   suffix?: string
   duration?: number
+  formatLocale?: boolean
 }
 
-export function AnimatedCounter({ value, suffix = '', duration = 2000 }: AnimatedCounterProps) {
+export function AnimatedCounter({
+  value,
+  suffix = '',
+  duration = 2000,
+  formatLocale = false,
+}: AnimatedCounterProps) {
   const ref = useRef<HTMLSpanElement>(null)
   const reducedMotion = useReducedMotion()
   const [count, setCount] = useState(0)
@@ -55,9 +61,11 @@ export function AnimatedCounter({ value, suffix = '', duration = 2000 }: Animate
     requestAnimationFrame(tick)
   }, [started, value, duration, reducedMotion])
 
+  const display = formatLocale ? count.toLocaleString('pt-BR') : String(count)
+
   return (
     <span ref={ref} className="tabular-nums">
-      {count}
+      {display}
       {suffix}
     </span>
   )

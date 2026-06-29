@@ -1,11 +1,28 @@
-import { siteConfig } from '@/data/content'
+import { useEffect, useState } from 'react'
+import { heroImages } from '@/data/content'
 import { Container } from '@/components/ui/Container'
 import { Button } from '@/components/ui/Button'
 import { FadeIn } from '@/components/ui/FadeIn'
 import { LazyImage } from '@/components/ui/LazyImage'
 import { Icon } from '@/components/ui/Icon'
+import { useReducedMotion } from '@/hooks/useReducedMotion'
+
+const images = [heroImages.primary, heroImages.alternate]
 
 export function Hero() {
+  const [activeIndex, setActiveIndex] = useState(0)
+  const reducedMotion = useReducedMotion()
+
+  useEffect(() => {
+    if (reducedMotion) return
+
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % images.length)
+    }, 6000)
+
+    return () => clearInterval(interval)
+  }, [reducedMotion])
+
   return (
     <section
       className="relative overflow-hidden bg-gradient-to-br from-brand-blue-light via-white to-brand-green-light"
@@ -31,38 +48,54 @@ export function Hero() {
             </h1>
 
             <p className="mt-6 text-lg text-text-muted leading-relaxed sm:text-xl">
-              {siteConfig.tagline}. Atendemos crianças e famílias em situação de
-              vulnerabilidade social com educação infantil de qualidade em Ribeirão
-              das Neves, MG.
+              Somos uma instituição beneficente sem fins lucrativos dedicada à
+              educação infantil e ao desenvolvimento social em Ribeirão das Neves,
+              MG.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-              <Button href="#ajudar" variant="primary">
-                Como ajudar
+              <Button href="/pix" variant="primary">
+                Doar com PIX
                 <Icon name="arrow" className="h-4 w-4" />
               </Button>
-              <Button href="#projetos" variant="outline">
-                Conheça nossos projetos
+              <Button href="#o-que-fazemos" variant="outline">
+                O que fazemos
               </Button>
             </div>
           </FadeIn>
 
           <FadeIn delay={0.15} className="relative">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl shadow-brand-blue/10">
-              <LazyImage
-                src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=1200&q=80"
-                alt="Crianças em atividade educativa ao ar livre no Instituto Meimei"
-                className="aspect-[4/3] w-full object-cover"
-                width={1200}
-                height={900}
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
+              {images.map((image, index) => (
+                <LazyImage
+                  key={image.src}
+                  src={image.src}
+                  alt={image.alt}
+                  className={`aspect-[4/3] w-full object-cover transition-opacity duration-700 ${
+                    index === activeIndex ? 'opacity-100' : 'absolute inset-0 opacity-0'
+                  }`}
+                  width={1200}
+                  height={900}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              ))}
               <div className="absolute inset-0 bg-gradient-to-t from-brand-blue/30 to-transparent" />
             </div>
 
-            <div className="absolute -bottom-4 -left-4 rounded-2xl bg-white p-4 shadow-lg sm:-bottom-6 sm:-left-6 sm:p-5">
-              <p className="text-2xl font-bold text-brand-green">15+</p>
-              <p className="text-sm text-text-muted">anos transformando vidas</p>
+            <div className="mt-4 flex justify-center gap-2" role="tablist" aria-label="Alternar foto do hero">
+              {images.map((image, index) => (
+                <button
+                  key={image.src}
+                  type="button"
+                  role="tab"
+                  aria-selected={index === activeIndex}
+                  aria-label={`Foto ${index + 1}`}
+                  onClick={() => setActiveIndex(index)}
+                  className={`h-2.5 w-2.5 rounded-full transition-colors ${
+                    index === activeIndex ? 'bg-brand-blue' : 'bg-surface-muted'
+                  }`}
+                />
+              ))}
             </div>
           </FadeIn>
         </div>

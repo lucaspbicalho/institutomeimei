@@ -12,7 +12,11 @@ export function Stats() {
             <FadeIn key={stat.label} delay={index * 0.08}>
               <li className="text-center">
                 <p className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-                  <AnimatedCounter value={stat.value} suffix={stat.suffix} />
+                  <AnimatedCounter
+                    value={stat.value}
+                    suffix={stat.suffix}
+                    formatLocale={stat.formatLocale}
+                  />
                 </p>
                 <p className="mt-2 text-sm text-white/80 sm:text-base">{stat.label}</p>
               </li>

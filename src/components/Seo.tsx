@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
-import { siteConfig } from '@/data/content'
+import { useLocation } from 'react-router-dom'
+import { pixConfig, siteConfig } from '@/data/content'
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -18,8 +19,19 @@ const jsonLd = {
 }
 
 export function Seo() {
+  const location = useLocation()
+  const isPix = location.pathname === '/pix'
+
+  const pageTitle = isPix
+    ? `${pixConfig.title} — ${siteConfig.name}`
+    : `${siteConfig.name} — Educação e Amparo à Criança`
+
+  const description = isPix
+    ? `Doe ao ${siteConfig.name} via PIX. Chave CNPJ ${pixConfig.keyFormatted}.`
+    : siteConfig.description
+
   useEffect(() => {
-    document.title = `${siteConfig.name} — Educação e Amparo à Criança`
+    document.title = pageTitle
 
     const setMeta = (name: string, content: string, property = false) => {
       const attr = property ? 'property' : 'name'
@@ -32,11 +44,11 @@ export function Seo() {
       el.setAttribute('content', content)
     }
 
-    setMeta('description', siteConfig.description)
-    setMeta('og:title', `${siteConfig.name} — Educação e Amparo à Criança`, true)
-    setMeta('og:description', siteConfig.description, true)
+    setMeta('description', description)
+    setMeta('og:title', pageTitle, true)
+    setMeta('og:description', description, true)
     setMeta('og:type', 'website', true)
-    setMeta('og:url', siteConfig.url, true)
+    setMeta('og:url', `${siteConfig.url}${location.pathname}`, true)
     setMeta('og:locale', 'pt_BR', true)
     setMeta('twitter:card', 'summary_large_image')
 
@@ -49,7 +61,7 @@ export function Seo() {
       document.head.appendChild(script)
     }
     script.textContent = JSON.stringify(jsonLd)
-  }, [])
+  }, [pageTitle, description, location.pathname])
 
   return null
 }

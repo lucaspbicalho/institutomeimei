@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import {
   footerLinkGroups,
   siteConfig,
@@ -6,8 +7,39 @@ import {
 import { Container } from '@/components/ui/Container'
 import { Icon } from '@/components/ui/Icon'
 
+function FooterLink({ href, label }: { href: string; label: string }) {
+  if (href.startsWith('#')) {
+    return (
+      <Link
+        to={{ pathname: '/', hash: href }}
+        className="text-sm text-white/70 transition-colors hover:text-white"
+      >
+        {label}
+      </Link>
+    )
+  }
+
+  if (href.startsWith('/')) {
+    return (
+      <Link
+        to={href}
+        className="text-sm text-white/70 transition-colors hover:text-white"
+      >
+        {label}
+      </Link>
+    )
+  }
+
+  return (
+    <a href={href} className="text-sm text-white/70 transition-colors hover:text-white">
+      {label}
+    </a>
+  )
+}
+
 export function Footer() {
   const year = new Date().getFullYear()
+  const whatsappUrl = `https://wa.me/${siteConfig.whatsapp}`
 
   return (
     <footer id="contato" className="bg-text text-white" aria-labelledby="footer-heading">
@@ -39,6 +71,17 @@ export function Footer() {
                 </a>
               </li>
             </ul>
+
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex items-center gap-3 rounded-full bg-[#25D366] px-5 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90"
+              aria-label="Conversar no WhatsApp"
+            >
+              <Icon name="whatsapp" className="h-5 w-5" />
+              WhatsApp
+            </a>
           </div>
 
           <div className="grid gap-8 sm:grid-cols-3 lg:col-span-5">
@@ -50,12 +93,7 @@ export function Footer() {
                 <ul className="mt-4 space-y-2">
                   {group.links.map((link) => (
                     <li key={link.label}>
-                      <a
-                        href={link.href}
-                        className="text-sm text-white/70 transition-colors hover:text-white"
-                      >
-                        {link.label}
-                      </a>
+                      <FooterLink href={link.href} label={link.label} />
                     </li>
                   ))}
                 </ul>

@@ -1,8 +1,35 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { navLinks, siteConfig } from '@/data/content'
 import { Container } from '@/components/ui/Container'
 import { Button } from '@/components/ui/Button'
 import { Icon } from '@/components/ui/Icon'
+
+function NavAnchor({ href, label, onClick }: { href: string; label: string; onClick?: () => void }) {
+  const isHash = href.startsWith('#')
+
+  if (isHash) {
+    return (
+      <Link
+        to={{ pathname: '/', hash: href }}
+        onClick={onClick}
+        className="rounded-full px-4 py-2 text-sm font-medium text-text-muted transition-colors hover:bg-surface hover:text-brand-blue"
+      >
+        {label}
+      </Link>
+    )
+  }
+
+  return (
+    <Link
+      to={href}
+      onClick={onClick}
+      className="rounded-full px-4 py-2 text-sm font-medium text-text-muted transition-colors hover:bg-surface hover:text-brand-blue"
+    >
+      {label}
+    </Link>
+  )
+}
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -13,8 +40,8 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-surface-muted/80 bg-white/95 backdrop-blur-sm">
       <Container>
         <div className="flex h-16 items-center justify-between lg:h-20">
-          <a
-            href="#"
+          <Link
+            to="/"
             className="flex items-center gap-2 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2"
             aria-label={`${siteConfig.name} — Página inicial`}
           >
@@ -24,22 +51,16 @@ export function Header() {
             <span className="text-lg font-bold text-text">
               {siteConfig.name}
             </span>
-          </a>
+          </Link>
 
           <nav className="hidden items-center gap-1 lg:flex" aria-label="Navegação principal">
             {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="rounded-full px-4 py-2 text-sm font-medium text-text-muted transition-colors hover:bg-surface hover:text-brand-blue"
-              >
-                {link.label}
-              </a>
+              <NavAnchor key={link.href} href={link.href} label={link.label} />
             ))}
           </nav>
 
           <div className="hidden lg:block">
-            <Button href="#ajudar" variant="secondary">Como ajudar</Button>
+            <Button href="/pix" variant="secondary">Doar com PIX</Button>
           </div>
 
           <button
@@ -63,17 +84,17 @@ export function Header() {
         >
           <Container className="flex flex-col gap-1 py-4">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
-                href={link.href}
+                to={{ pathname: '/', hash: link.href }}
                 onClick={closeMenu}
                 className="rounded-lg px-4 py-3 text-base font-medium text-text hover:bg-surface"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
-            <Button href="#ajudar" variant="secondary" className="mt-2 w-full">
-              Como ajudar
+            <Button href="/pix" variant="secondary" className="mt-2 w-full">
+              Doar com PIX
             </Button>
           </Container>
         </nav>

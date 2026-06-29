@@ -1,4 +1,4 @@
-import { projects } from '@/data/content'
+import { projects, whatWeDoIntro } from '@/data/content'
 import { Container } from '@/components/ui/Container'
 import { SectionHeading } from '@/components/ui/SectionHeading'
 import { LazyImage } from '@/components/ui/LazyImage'
@@ -64,17 +64,18 @@ export function About() {
 export function Projects() {
   return (
     <section
-      id="projetos"
+      id="o-que-fazemos"
       className="bg-surface py-16 sm:py-20 lg:py-24"
       aria-labelledby="projects-heading"
     >
       <Container>
         <FadeIn>
-          <SectionHeading
-            id="projects-heading"
-            title="Nossos projetos"
-            subtitle="Áreas de atuação que transformam a vida de crianças, famílias e educadores."
-          />
+          <SectionHeading id="projects-heading" title="O que Fazemos" align="left" />
+          <div className="mb-10 max-w-3xl space-y-4 text-text-muted leading-relaxed">
+            {whatWeDoIntro.map((paragraph) => (
+              <p key={paragraph.slice(0, 40)}>{paragraph}</p>
+            ))}
+          </div>
         </FadeIn>
 
         <ul className="grid gap-6 sm:grid-cols-2 lg:gap-8">
