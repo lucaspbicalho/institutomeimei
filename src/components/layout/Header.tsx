@@ -43,12 +43,11 @@ export function Header() {
             className="flex items-center gap-2 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2"
             aria-label={`${siteConfig.name} — Página inicial`}
           >
-            <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand-blue text-sm font-bold text-white">
-              M
-            </span>
-            <span className="text-lg font-bold text-text">
-              {siteConfig.name}
-            </span>
+             <img
+              src="/logo.jpg"
+              alt={siteConfig.name}
+              className="h-12 w-auto"
+            />            
           </Link>
 
           <nav className="hidden items-center gap-1 lg:flex" aria-label="Navegação principal">

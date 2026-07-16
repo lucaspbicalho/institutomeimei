@@ -63,7 +63,7 @@ export const projects: Project[] = [
     description:
       'Escola de educação infantil em chácara, com pedagogia fundamentada no amor, natureza e formação integral do ser.',
     image:
-      'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&q=80',
+      '/projetos/project1.jpeg',
     imageAlt: 'Crianças aprendendo em ambiente natural ao ar livre',
     tag: 'Educação',
   },
@@ -73,7 +73,7 @@ export const projects: Project[] = [
     description:
       'Promovemos encontros de evangelização e convivência cristã com as famílias, oferecendo momentos de reflexão, fortalecimento da fé, estudo do Evangelho e construção de valores.',
     image:
-      'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&q=80',
+      '/projetos/project2.jpeg',
     imageAlt: 'Famílias em momento de convivência e reflexão',
     tag: 'Evangelização',
   },
@@ -83,7 +83,7 @@ export const projects: Project[] = [
     description:
       'Apoio às famílias em situação de vulnerabilidade social, por meio da distribuição de cestas básicas, orientação, acolhimento e acompanhamento.',
     image:
-      'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80',
+      '/projetos/project3.jpeg',
     imageAlt: 'Família e criança em atividade comunitária',
     tag: 'Social',
   },
@@ -93,7 +93,7 @@ export const projects: Project[] = [
     description:
       'Aprendizagem vinculada ao ambiente natural da chácara, estimulando descoberta, respeito e conexão com a vida.',
     image:
-      'https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=800&q=80',
+      '/projetos/project4.jpeg',
     imageAlt: 'Criança explorando plantas e natureza',
     tag: 'Natureza',
   },
@@ -165,39 +165,27 @@ export const testimonials: Testimonial[] = [
 export const galleryImages: GalleryImage[] = [
   {
     id: 'g1',
-    src: 'https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=600&q=80',
+    src: '/galeria/galeria1.jpeg',
     alt: 'Crianças em atividade artística na escola',
     caption: 'Atividades artísticas',
   },
   {
     id: 'g2',
-    src: 'https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=600&q=80',
+    src: '/galeria/galeria2.jpeg',
     alt: 'Crianças lendo livros juntas',
     caption: 'Momento de leitura',
   },
   {
     id: 'g3',
-    src: 'https://images.unsplash.com/photo-1560787474-b85dd786050a?w=600&q=80',
+    src: '/galeria/galeria3.jpeg',
     alt: 'Crianças brincando ao ar livre',
     caption: 'Recreação na natureza',
   },
   {
     id: 'g4',
-    src: 'https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=600&q=80',
+    src: '/galeria/galeria4.jpeg',
     alt: 'Grupo de crianças em atividade educativa',
     caption: 'Aprendizagem em grupo',
-  },
-  {
-    id: 'g5',
-    src: 'https://images.unsplash.com/photo-1472162072942-cd5147eb3902?w=600&q=80',
-    alt: 'Espaço verde da chácara escolar',
-    caption: 'Nosso espaço',
-  },
-  {
-    id: 'g6',
-    src: 'https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=600&q=80',
-    alt: 'Criança explorando a natureza',
-    caption: 'Educação pela natureza',
   },
 ]
 

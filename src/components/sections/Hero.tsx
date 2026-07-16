@@ -7,7 +7,7 @@ import { LazyImage } from '@/components/ui/LazyImage'
 import { Icon } from '@/components/ui/Icon'
 import { useReducedMotion } from '@/hooks/useReducedMotion'
 
-const images = [heroImages.primary, heroImages.alternate]
+const images = [heroImages.primary]
 
 export function Hero() {
   const [activeIndex, setActiveIndex] = useState(0)
