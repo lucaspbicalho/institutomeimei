@@ -63,7 +63,7 @@ export const projects: Project[] = [
     description:
       'Escola de educação infantil em chácara, com pedagogia fundamentada no amor, natureza e formação integral do ser.',
     image:
-      '/projetos/project4.jpeg',
+      '/projetos/eduinfatil.jpeg',
     imageAlt: 'Crianças aprendendo em ambiente natural ao ar livre',
     tag: 'Educação',
   },
@@ -73,7 +73,7 @@ export const projects: Project[] = [
     description:
       'Promovemos encontros de evangelização e convivência cristã com as famílias, oferecendo momentos de reflexão, fortalecimento da fé, estudo do Evangelho e construção de valores.',
     image:
-      '/projetos/project1.jpeg',
+      '/projetos/evan.jpeg',
     imageAlt: 'Famílias em momento de convivência e reflexão',
     tag: 'Evangelização',
   },
@@ -83,7 +83,7 @@ export const projects: Project[] = [
     description:
       'Apoio às famílias em situação de vulnerabilidade social, por meio da distribuição de cestas básicas, orientação, acolhimento e acompanhamento.',
     image:
-      '/projetos/project3.jpeg',
+      '/projetos/promosocial.jpeg',
     imageAlt: 'Família e criança em atividade comunitária',
     tag: 'Social',
   },
@@ -93,7 +93,7 @@ export const projects: Project[] = [
     description:
       'Aprendizagem vinculada ao ambiente natural da chácara, estimulando descoberta, respeito e conexão com a vida.',
     image:
-      '/projetos/project1.jpeg',
+      '/projetos/promo.jpeg',
     imageAlt: 'Criança explorando plantas e natureza',
     tag: 'Natureza',
   },
@@ -177,13 +177,25 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: 'g3',
-    src: '/galeria/galeria3.jpeg',
+    src: '/galeria/galeria5.jpeg',
     alt: 'Crianças brincando ao ar livre',
     caption: 'Recreação na natureza',
   },
   {
     id: 'g4',
-    src: '/galeria/galeria4.jpeg',
+    src: '/galeria/galeria6.jpeg',
+    alt: 'Grupo de crianças em atividade educativa',
+    caption: 'Aprendizagem em grupo',
+  },
+  {
+    id: 'g5',
+    src: '/galeria/galeria7.jpeg',
+    alt: 'Grupo de crianças em atividade educativa',
+    caption: 'Aprendizagem em grupo',
+  },
+  {
+    id: 'g6',
+    src: '/galeria/galeria8.jpeg',
     alt: 'Grupo de crianças em atividade educativa',
     caption: 'Aprendizagem em grupo',
   },
@@ -229,7 +241,11 @@ export const heroImages = {
     alt: 'Criança em atividade educativa ao ar livre no Instituto Meimei',
   },
   alternate: {
-    src: 'https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=1200&q=80',
+    src: 'heroImage.jpeg',
+    alt: 'Grupo de crianças em atividade educativa na comunidade',
+  },
+  secundary: {
+    src: 'project4.jpeg',
     alt: 'Grupo de crianças em atividade educativa na comunidade',
   },
 }
