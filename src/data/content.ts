@@ -201,6 +201,7 @@ export const galleryImages: GalleryImage[] = [
   },
 ]
 
+
 export const footerLinkGroups: FooterLinkGroup[] = [
   {
     title: 'Institucional',
