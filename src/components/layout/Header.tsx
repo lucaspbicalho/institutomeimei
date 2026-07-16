@@ -6,17 +6,15 @@ import { Button } from '@/components/ui/Button'
 import { Icon } from '@/components/ui/Icon'
 
 function NavAnchor({ href, label, onClick }: { href: string; label: string; onClick?: () => void }) {
-  const isHash = href.startsWith('#')
-
-  if (isHash) {
+  if (href.startsWith('#')) {
     return (
-      <Link
-        to={{ pathname: '/', hash: href }}
+      <a
+        href={href}
         onClick={onClick}
         className="rounded-full px-4 py-2 text-sm font-medium text-text-muted transition-colors hover:bg-surface hover:text-brand-blue"
       >
         {label}
-      </Link>
+      </a>
     )
   }
 
@@ -84,14 +82,14 @@ export function Header() {
         >
           <Container className="flex flex-col gap-1 py-4">
             {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                to={{ pathname: '/', hash: link.href }}
-                onClick={closeMenu}
-                className="rounded-lg px-4 py-3 text-base font-medium text-text hover:bg-surface"
-              >
-                {link.label}
-              </Link>
+              <a
+              key={link.href}
+              href={link.href}
+              onClick={closeMenu}
+              className="rounded-lg px-4 py-3 text-base font-medium text-text hover:bg-surface"
+            >
+              {link.label}
+            </a>
             ))}
             <Button href="/pix" variant="secondary" className="mt-2 w-full">
               Doar com PIX

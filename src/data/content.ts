@@ -16,8 +16,8 @@ export const siteConfig = {
     'Instituição Espírita de Amparo à Criança. Educação infantil de qualidade e desenvolvimento social em Ribeirão das Neves, MG.',
   url: 'https://institutomeimei.com.br',
   email: 'institutomeimeibh@gmail.com',
-  phone: '+55 31 3474 9338',
-  whatsapp: '553134749338',
+  phone: '(31) 3191-5367',
+  whatsapp: '553188645299',
   address: 'Av. Gávea, 1092 — Urca, Justinópolis, Ribeirão das Neves — MG',
 }
 
@@ -230,9 +230,9 @@ export const footerLinkGroups: FooterLinkGroup[] = [
 ]
 
 export const socialLinks = [
-  { label: 'Facebook', href: 'https://facebook.com', icon: 'facebook' },
-  { label: 'Instagram', href: 'https://instagram.com', icon: 'instagram' },
-  { label: 'YouTube', href: 'https://youtube.com', icon: 'youtube' },
+  { label: 'Facebook', href: 'https://www.facebook.com/institutomeimei/?locale=pt_BR', icon: 'facebook' },
+  { label: 'Instagram', href: 'https://www.instagram.com/institutomeimeibh/', icon: 'instagram' },
+  { label: 'YouTube', href: 'https://www.youtube.com/@InstitutoMeimei', icon: 'youtube' },
 ]
 
 export const heroImages = {

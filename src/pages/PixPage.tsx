@@ -37,6 +37,14 @@ export function PixPage() {
               </p>
               <p className="mt-2 text-sm text-text-muted">{pixConfig.legalName}</p>
 
+              <div className="mt-6 flex justify-center">
+                <img
+                  src="/qrcode-pix.png"
+                  alt="QR Code para doação via PIX"
+                  className="h-56 w-56 rounded-xl border border-surface-muted"
+                />
+              </div>
+
               <Button
                 type="button"
                 variant="primary"
