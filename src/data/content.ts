@@ -63,7 +63,7 @@ export const projects: Project[] = [
     description:
       'Escola de educação infantil em chácara, com pedagogia fundamentada no amor, natureza e formação integral do ser.',
     image:
-      '/projetos/project1.jpeg',
+      '/projetos/project4.jpeg',
     imageAlt: 'Crianças aprendendo em ambiente natural ao ar livre',
     tag: 'Educação',
   },
@@ -73,7 +73,7 @@ export const projects: Project[] = [
     description:
       'Promovemos encontros de evangelização e convivência cristã com as famílias, oferecendo momentos de reflexão, fortalecimento da fé, estudo do Evangelho e construção de valores.',
     image:
-      '/projetos/project2.jpeg',
+      '/projetos/project1.jpeg',
     imageAlt: 'Famílias em momento de convivência e reflexão',
     tag: 'Evangelização',
   },
@@ -93,7 +93,7 @@ export const projects: Project[] = [
     description:
       'Aprendizagem vinculada ao ambiente natural da chácara, estimulando descoberta, respeito e conexão com a vida.',
     image:
-      '/projetos/project4.jpeg',
+      '/projetos/project1.jpeg',
     imageAlt: 'Criança explorando plantas e natureza',
     tag: 'Natureza',
   },
