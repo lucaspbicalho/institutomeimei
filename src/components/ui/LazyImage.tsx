@@ -17,7 +17,7 @@ export function LazyImage({
   height,
   sizes,
 }: LazyImageProps) {
-  const [loaded, setLoaded] = useState(false)
+  const [, setLoaded] = useState(false)
 
   return (
     <img

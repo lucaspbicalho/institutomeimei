@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { heroImages } from '@/data/content'
 import { Container } from '@/components/ui/Container'
 import { Button } from '@/components/ui/Button'
