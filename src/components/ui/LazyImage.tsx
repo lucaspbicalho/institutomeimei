@@ -29,7 +29,7 @@ export function LazyImage({
       loading="lazy"
       decoding="async"
       onLoad={() => setLoaded(true)}
-      className={className}
+      className={`transition-opacity duration-500 ${loaded ? 'opacity-100' : 'opacity-0'} ${className}`}
     />
   )
 }
