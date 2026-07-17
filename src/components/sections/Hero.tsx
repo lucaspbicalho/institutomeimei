@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { heroImages } from '@/data/content'
 import { Container } from '@/components/ui/Container'
 import { Button } from '@/components/ui/Button'
@@ -67,15 +67,14 @@ export function Hero() {
           <FadeIn delay={0.15} className="relative">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl shadow-brand-blue/10">
             <LazyImage
-    key={images[activeIndex].src}
-    src={images[activeIndex].src}
-    alt={images[activeIndex].alt}
+  src={images[activeIndex].src}
+  alt={images[activeIndex].alt}
     className="aspect-[4/3] w-full object-cover"
     width={1200}
     height={900}
     sizes="(max-width: 1024px) 100vw, 50vw"
   />
-              ))}
+          
               <div className="absolute inset-0 bg-gradient-to-t from-brand-blue/30 to-transparent" />
             </div>
 
