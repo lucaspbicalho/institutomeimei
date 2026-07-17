@@ -242,11 +242,11 @@ export const heroImages = {
     alt: 'Criança em atividade educativa ao ar livre no Instituto Meimei',
   },
   alternate: {
-    src: 'heroImage.jpeg',
+    src: '/heroImage.jpeg',
     alt: 'Grupo de crianças em atividade educativa na comunidade',
   },
-  secundary: {
-    src: 'project4.jpeg',
+  secondary: {
+    src: '/project4.jpeg',
     alt: 'Grupo de crianças em atividade educativa na comunidade',
   },
 }
