@@ -195,7 +195,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: 'g6',
-    src: '/galeria/galeria8.jpeg',
+    src: '/galeria/galeria9.jpeg',
     alt: 'Grupo de crianças em atividade educativa',
     caption: 'Aprendizagem em grupo',
   },
@@ -238,7 +238,7 @@ export const socialLinks = [
 
 export const heroImages = {
   primary: {
-    src: '/hero.jpg',
+    src: 'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=1200&q=80',
     alt: 'Criança em atividade educativa ao ar livre no Instituto Meimei',
   },
   alternate: {

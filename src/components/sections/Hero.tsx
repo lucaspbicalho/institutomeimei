@@ -13,15 +13,15 @@ export function Hero() {
   const [activeIndex, setActiveIndex] = useState(0)
   const reducedMotion = useReducedMotion()
 
-  // useEffect(() => {
-  //   if (reducedMotion) return
+  useEffect(() => {
+    if (reducedMotion) return
 
-  //   const interval = setInterval(() => {
-  //     setActiveIndex((prev) => (prev + 1) % images.length)
-  //   }, 6000)
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % images.length)
+    }, 6000)
 
-  //   return () => clearInterval(interval)
-  // }, [reducedMotion])
+    return () => clearInterval(interval)
+  }, [reducedMotion])
 
   return (
     <section
