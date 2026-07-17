@@ -26,7 +26,7 @@ export function LazyImage({
       width={width}
       height={height}
       sizes={sizes}
-      loading="lazy"
+      loading="eager"
       decoding="async"
       onLoad={() => setLoaded(true)}
             className={className}
