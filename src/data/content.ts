@@ -238,7 +238,7 @@ export const socialLinks = [
 
 export const heroImages = {
   primary: {
-    src: 'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=1200&q=80',
+    src: '/hero.jpg',
     alt: 'Criança em atividade educativa ao ar livre no Instituto Meimei',
   },
   alternate: {
