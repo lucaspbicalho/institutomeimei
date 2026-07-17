@@ -66,7 +66,7 @@ export function Hero() {
 
           <FadeIn delay={0.15} className="relative">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl shadow-brand-blue/10">
-            <LazyImage
+            <img
   src={images[activeIndex].src}
   alt={images[activeIndex].alt}
     className="aspect-[4/3] w-full object-cover"
