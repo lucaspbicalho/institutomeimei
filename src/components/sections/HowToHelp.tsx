@@ -32,7 +32,7 @@ export function HowToHelp() {
                   <Icon name={option.icon} className="h-6 w-6" />
                 </div>
 
-                <h3 className="mt-4 text-lg font-bold text">
+                <h3 className="mt-4 text-lg font-bold text-white">
                   {option.title}
                 </h3>
 
