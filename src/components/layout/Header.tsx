@@ -48,15 +48,10 @@ export function Header() {
               alt={siteConfig.name}
               className="h-16 w-auto"
             />
-            <div className="flex flex-col leading-tight">
-              <span className="text-lg font-bold text-brand-blue md:text-xl">
-                Instituto Meimei
-              </span>
 
-              <span className="text-xs text-text-muted md:text-sm">
-                Instituição Espírita de Amparo à Criança
-              </span>
-            </div>      
+            <span className="mt-1 text-center text-xs text-text-muted md:text-sm">
+              Instituição Espírita de Amparo à Criança
+            </span>
           </Link>
 
           <nav className="hidden items-center gap-1 lg:flex" aria-label="Navegação principal">
