@@ -47,6 +47,7 @@ export const navLinks: NavLink[] = [
   { label: 'Como ajudar', href: '#ajudar' },
   { label: 'Galeria', href: '#galeria' },
   { label: 'Contato', href: '#contato' },
+  { label: 'Apadrinhe', href: '/apadrinhe' },
 ]
 
 export const stats: StatItem[] = [
