@@ -9,7 +9,7 @@ export function HowToHelp() {
   return (
     <section
       id="ajudar"
-      className="bg-brand-blue py-16 sm:py-20 lg:py-24"
+      className="py-16 sm:py-20 lg:py-24"
       aria-labelledby="help-heading"
     >
       <Container>
@@ -26,7 +26,7 @@ export function HowToHelp() {
         <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {helpOptions.map((option, index) => (
             <FadeIn key={option.id} delay={index * 0.08}>
-              <li className="flex flex-col rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur-sm transition-shadow hover:shadow-md">
+              <li className="flex flex-col rounded-2xl bg-brand-blue p-6 shadow-md transition-shadow hover:shadow-lg">
 
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white text-brand-blue">
                   <Icon name={option.icon} className="h-6 w-6" />
