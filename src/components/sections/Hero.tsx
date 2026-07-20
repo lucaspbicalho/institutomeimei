@@ -4,6 +4,7 @@ import { Container } from '@/components/ui/Container'
 import { Button } from '@/components/ui/Button'
 import { FadeIn } from '@/components/ui/FadeIn'
 import { LazyImage } from '@/components/ui/LazyImage'
+import { Icon } from '@/components/ui/Icon'
 import { useReducedMotion } from '@/hooks/useReducedMotion'
 
 const images = [heroImages.primary, heroImages.alternate, heroImages.secondary]
@@ -49,6 +50,10 @@ export function Hero() {
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <Button href="/pix" variant="primary">
+                Doar com PIX
+                <Icon name="arrow" className="h-4 w-4" />
+              </Button>
               <Button href="#o-que-fazemos" variant="outline">
                 O que fazemos
               </Button>
