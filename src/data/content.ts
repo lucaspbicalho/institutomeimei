@@ -219,6 +219,7 @@ export const footerLinkGroups: FooterLinkGroup[] = [
       { label: 'Voluntariado', href: '#ajudar' },
       { label: 'Doações', href: '/pix' },
       { label: 'Parcerias', href: '#contato' },
+      { label: 'Apadrinhe uma criança', href: '/apadrinhe' },
     ],
   },
   {

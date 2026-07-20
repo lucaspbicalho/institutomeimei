@@ -2,7 +2,10 @@ import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 
-const pagBankUrl = "https://pag.ae/817Xs_nr5/button";
+const pagBank25Url = "https://pag.ae/817Xs_nr5/button";
+const pagBank50Url = "https://pag.ae/817XtuBKp/button";
+const pagBank100Url = "https://pag.ae/817Xu9vup/button";
+
 
 export function ApadrinhePage() {
   return (
@@ -28,7 +31,7 @@ export function ApadrinhePage() {
 
             <Card>
               <h2 className="text-2xl font-bold text-brand-blue">
-                R$ 30/mês
+                R$ 25/mês
               </h2>
 
               <p className="mt-3 text-text-muted">
@@ -36,7 +39,7 @@ export function ApadrinhePage() {
               </p>
 
               <Button
-                href={pagBankUrl}
+                href={pagBank25Url}
                 variant="primary"
                 className="mt-6 w-full"
               >
@@ -55,7 +58,7 @@ export function ApadrinhePage() {
               </p>
 
               <Button
-                href={pagBankUrl}
+                href={pagBank50Url}
                 variant="primary"
                 className="mt-6 w-full"
               >
@@ -74,7 +77,7 @@ export function ApadrinhePage() {
               </p>
 
               <Button
-                href={pagBankUrl}
+                href={pagBank100Url}
                 variant="primary"
                 className="mt-6 w-full"
               >
