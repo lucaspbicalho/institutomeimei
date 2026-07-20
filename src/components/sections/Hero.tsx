@@ -33,11 +33,7 @@ export function Hero() {
 
       <Container className="relative py-16 sm:py-20 lg:py-28">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-          <FadeIn>
-            <span className="inline-block rounded-full bg-brand-blue/10 px-4 py-1.5 text-sm font-semibold text-brand-blue">
-              Instituição Espírita de Amparo à Criança
-            </span>
-
+          <FadeIn>        
             <h1
               id="hero-heading"
               className="mt-6 text-4xl font-bold leading-tight tracking-tight text-text sm:text-5xl lg:text-6xl"

@@ -50,9 +50,9 @@ export const navLinks: NavLink[] = [
 ]
 
 export const stats: StatItem[] = [
-  { value: 18, suffix: '+', label: 'Anos de história' },
-  { value: 50, suffix: '+', label: 'Crianças atendidas' },
-  { value: 300, suffix: '+', label: 'Pessoas beneficiadas' },
+  { value: 17, suffix: '+', label: 'Anos de história' },
+  { value: 50, suffix: '+', label: 'Crianças atendidas por ano' },
+  { value: 300, suffix: '+', label: 'Pessoas beneficiadas por ano' },
   { value: 11500, suffix: '+', label: 'Refeições por ano', formatLocale: true },
 ]
 
@@ -238,7 +238,7 @@ export const socialLinks = [
 
 export const heroImages = {
   primary: {
-    src: 'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=1200&q=80',
+    src: '/hero01.jpeg',
     alt: 'Criança em atividade educativa ao ar livre no Instituto Meimei',
   },
   alternate: {

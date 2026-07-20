@@ -47,7 +47,16 @@ export function Header() {
               src="/logo.jpg"
               alt={siteConfig.name}
               className="h-16 w-auto"
-            />            
+            />
+            <div className="flex flex-col leading-tight">
+              <span className="text-lg font-bold text-brand-blue md:text-xl">
+                Instituto Meimei
+              </span>
+
+              <span className="text-xs text-text-muted md:text-sm">
+                Instituição Espírita de Amparo à Criança
+              </span>
+            </div>      
           </Link>
 
           <nav className="hidden items-center gap-1 lg:flex" aria-label="Navegação principal">
@@ -55,11 +64,7 @@ export function Header() {
               <NavAnchor key={link.href} href={link.href} label={link.label} />
             ))}
           </nav>
-
-          <div className="hidden lg:block">
-            <Button href="/pix" variant="secondary">Doar com PIX</Button>
-          </div>
-
+  
           <button
             type="button"
             className="rounded-lg p-2 text-text lg:hidden"
