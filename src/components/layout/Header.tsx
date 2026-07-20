@@ -40,7 +40,7 @@ export function Header() {
         <div className="flex h-16 items-center justify-between lg:h-20">
           <Link
             to="/"
-            className="flex items-center gap-2 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2"
+            className="flex flex-col items-center justify-center rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2"
             aria-label={`${siteConfig.name} — Página inicial`}
           >
              <img
