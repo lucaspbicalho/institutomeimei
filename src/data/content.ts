@@ -115,7 +115,7 @@ export const helpOptions: HelpOption[] = [
     title: 'Voluntariado',
     description:
       'Participe com seu tempo e talento em atividades educativas, eventos e projetos comunitários.',
-    icon: 'hand',
+    icon: 'user-plus',
     cta: 'Quero ser voluntário',
     href: '#contato',
   },

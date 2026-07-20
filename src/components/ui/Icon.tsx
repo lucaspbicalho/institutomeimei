@@ -1,6 +1,21 @@
 import type { ReactNode } from 'react'
 
-type IconName = 'heart' | 'hand' | 'gift' | 'users' | 'facebook' | 'instagram' | 'youtube' | 'whatsapp' | 'menu' | 'close' | 'arrow' | 'mail' | 'phone' | 'map'
+type IconName =
+  | 'heart'
+  | 'hand'
+  | 'gift'
+  | 'users'
+  | 'user-plus'
+  | 'facebook'
+  | 'instagram'
+  | 'youtube'
+  | 'whatsapp'
+  | 'menu'
+  | 'close'
+  | 'arrow'
+  | 'mail'
+  | 'phone'
+  | 'map'
 
 interface IconProps {
   name: IconName
@@ -39,6 +54,31 @@ export function Icon({ name, className = 'h-5 w-5' }: IconProps) {
         <path d="M15 19c.5-2 2.5-3.5 5-3.5" stroke="currentColor" strokeWidth="1.5" fill="none" />
       </>
     ),
+    'user-plus': (
+  <>
+    <circle
+      cx="9"
+      cy="8"
+      r="3"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      fill="none"
+    />
+    <path
+      d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      fill="none"
+      strokeLinecap="round"
+    />
+    <path
+      d="M18 8v6M15 11h6"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+    />
+  </>
+),
     facebook: (
       <path
         fill="currentColor"
