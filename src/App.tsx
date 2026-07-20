@@ -12,6 +12,17 @@ function PixLayout() {
       <Header />
       <main id="main-content">
         <PixPage />
+      </main>
+      <Footer />
+    </>
+  )
+}
+
+function ApadrinheLayout() {
+  return (
+    <>
+      <Header />
+      <main id="main-content">
         <ApadrinhePage />
       </main>
       <Footer />
@@ -26,7 +37,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomeLayout />} />
         <Route path="/pix" element={<PixLayout />} />
-        <Route path="/apadrinhe" element={<ApadrinhePage />} />
+        <Route path="/apadrinhe" element={<ApadrinheLayout  />} />
       </Routes>
     </BrowserRouter>
   )
