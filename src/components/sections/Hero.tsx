@@ -4,7 +4,6 @@ import { Container } from '@/components/ui/Container'
 import { Button } from '@/components/ui/Button'
 import { FadeIn } from '@/components/ui/FadeIn'
 import { LazyImage } from '@/components/ui/LazyImage'
-import { Icon } from '@/components/ui/Icon'
 import { useReducedMotion } from '@/hooks/useReducedMotion'
 
 const images = [heroImages.primary, heroImages.alternate, heroImages.secondary]
