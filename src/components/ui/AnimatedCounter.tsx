@@ -12,7 +12,6 @@ interface AnimatedCounterProps {
 export function AnimatedCounter({
   value,
   prefix = '',
-  suffix = '',
   duration = 2000,
   formatLocale = false,
 }: AnimatedCounterProps) {
