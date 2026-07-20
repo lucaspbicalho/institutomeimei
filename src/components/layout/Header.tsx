@@ -37,7 +37,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-surface-muted/80 bg-white/95 backdrop-blur-sm">
       <Container>
-        <div className="flex h-16 items-center justify-between lg:h-20">
+        <div className="flex items-center justify-between py-3">
         <Link
           to="/"
           className="mx-auto flex flex-col items-center justify-center rounded-lg"
@@ -46,11 +46,11 @@ export function Header() {
           <img
             src="/logo.jpg"
             alt={siteConfig.name}
-            className="h-24 w-auto"
+            className="h-16 w-auto md:h-20"
           />
 
-          <div className="mt-3 rounded-full border border-brand-blue/30 bg-gradient-to-r from-brand-blue/10 to-brand-green/10 px-5 py-2 shadow-sm backdrop-blur-sm">
-            <span className="text-sm font-semibold tracking-wide text-brand-blue">
+          <div className="mt-2 rounded-full border border-brand-blue/20 bg-brand-blue/5 px-4 py-1">
+            <span className="text-xs font-semibold text-brand-blue md:text-sm">
               Instituição Espírita de Amparo à Criança
             </span>
           </div>
