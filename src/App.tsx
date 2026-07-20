@@ -4,6 +4,7 @@ import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { HomeLayout } from '@/pages/HomePage'
 import { PixPage } from '@/pages/PixPage'
+import { Apadrinhe } from '@/pages/ApadrinhePage'
 
 function PixLayout() {
   return (
@@ -11,6 +12,7 @@ function PixLayout() {
       <Header />
       <main id="main-content">
         <PixPage />
+        <Apadrinhe />
       </main>
       <Footer />
     </>
