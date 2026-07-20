@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { navLinks, siteConfig } from '@/data/content'
 import { Container } from '@/components/ui/Container'
-import { Button } from '@/components/ui/Button'
 import { Icon } from '@/components/ui/Icon'
 
 function NavAnchor({ href, label, onClick }: { href: string; label: string; onClick?: () => void }) {
