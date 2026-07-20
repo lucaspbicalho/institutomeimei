@@ -96,6 +96,9 @@ export function Header() {
               {link.label}
             </a>
             ))}
+             <Button href="/pix" variant="secondary" className="mt-2 w-full">
+              Doar com PIX
+            </Button>
           </Container>
         </nav>
       )}
