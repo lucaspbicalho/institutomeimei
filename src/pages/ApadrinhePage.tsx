@@ -1,11 +1,7 @@
 import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-
-const pagBank25Url = "https://pag.ae/817Xs_nr5/button";
-const pagBank50Url = "https://pag.ae/817XtuBKp/button";
-const pagBank100Url = "https://pag.ae/817Xu9vup/button";
-
+import { sponsorPlans } from "@/data/content";
 
 export function ApadrinhePage() {
   return (
@@ -18,8 +14,9 @@ export function ApadrinhePage() {
             </h1>
 
             <p className="mt-6 text-lg text-text-muted">
-              Sua contribuição mensal ajuda a manter nossos projetos
-              de educação, acolhimento e transformação social.
+              Seu apoio mensal ajuda o Instituto Meimei a oferecer educação,
+              alimentação, acolhimento e oportunidades para crianças em
+              situação de vulnerabilidade.
             </p>
           </div>
         </Container>
@@ -27,64 +24,65 @@ export function ApadrinhePage() {
 
       <section className="py-16">
         <Container>
+          <div className="mb-12 text-center">
+            <h2 className="text-3xl font-bold text-text">
+              Escolha uma contribuição mensal
+            </h2>
+
+            <p className="mt-4 text-text-muted">
+              Cada valor representa cuidado, educação e transformação.
+            </p>
+          </div>
+
           <div className="grid gap-6 md:grid-cols-3">
-
-            <Card>
-              <h2 className="text-2xl font-bold text-brand-blue">
-                R$ 25/mês
-              </h2>
-
-              <p className="mt-3 text-text-muted">
-                Ajude na manutenção dos nossos projetos.
-              </p>
-
-              <Button
-                href={pagBank25Url}
-                variant="primary"
-                className="mt-6 w-full"
+            {sponsorPlans.map((plan) => (
+              <Card
+                key={plan.title}
+                className={
+                  plan.recommended
+                    ? "border-2 border-brand-blue shadow-lg"
+                    : ""
+                }
               >
-                Quero apadrinhar
-              </Button>
-            </Card>
+                {plan.recommended && (
+                  <span className="mb-4 inline-block rounded-full bg-brand-blue px-3 py-1 text-sm font-semibold text-white">
+                    Mais escolhido
+                  </span>
+                )}
 
+                <h3 className="text-2xl font-bold text-brand-blue">
+                  {plan.title}
+                </h3>
 
-            <Card>
-              <h2 className="text-2xl font-bold text-brand-blue">
-                R$ 50/mês
-              </h2>
+                <p className="mt-4 text-text-muted">
+                  {plan.description}
+                </p>
 
-              <p className="mt-3 text-text-muted">
-                Sua contribuição amplia nosso atendimento.
-              </p>
+                <Button
+                  href={plan.url}
+                  variant="primary"
+                  className="mt-6 w-full"
+                >
+                  Quero apadrinhar
+                </Button>
+              </Card>
+            ))}
+          </div>
+        </Container>
+      </section>
 
-              <Button
-                href={pagBank50Url}
-                variant="primary"
-                className="mt-6 w-full"
-              >
-                Quero apadrinhar
-              </Button>
-            </Card>
+      <section className="bg-brand-blue-light py-16">
+        <Container>
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="text-2xl font-bold text-text">
+              Juntos podemos transformar histórias
+            </h2>
 
-
-            <Card>
-              <h2 className="text-2xl font-bold text-brand-blue">
-                R$ 100/mês
-              </h2>
-
-              <p className="mt-3 text-text-muted">
-                Uma ajuda ainda maior para transformar vidas.
-              </p>
-
-              <Button
-                href={pagBank100Url}
-                variant="primary"
-                className="mt-6 w-full"
-              >
-                Quero apadrinhar
-              </Button>
-            </Card>
-
+            <p className="mt-4 text-text-muted">
+              O apadrinhamento é uma forma de participar da missão do Instituto
+              Meimei e garantir que mais crianças tenham acesso a cuidado,
+              aprendizado e desenvolvimento.
+            </p>
           </div>
         </Container>
       </section>
