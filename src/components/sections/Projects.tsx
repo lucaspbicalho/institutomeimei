@@ -70,8 +70,8 @@ export function Projects() {
     >
       <Container>
         <FadeIn>
-          <SectionHeading id="projects-heading" title="O que Fazemos" align="left" />
-          <div className="mb-10 max-w-3xl space-y-4 text-text-muted leading-relaxed">
+          <SectionHeading id="projects-heading" title="O que Fazemos" align="center" />
+          <div className="mx-auto mb-10 max-w-3xl space-y-4 text-center text-text-muted leading-relaxed">
             {whatWeDoIntro.map((paragraph) => (
               <p key={paragraph.slice(0, 40)}>{paragraph}</p>
             ))}
