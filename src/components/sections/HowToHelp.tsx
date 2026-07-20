@@ -18,8 +18,8 @@ export function HowToHelp() {
             id="help-heading"
             title="Como ajudar"
             subtitle="Existem diversas formas de participar do nosso trabalho. Cada contribuição faz a diferença na vida das crianças."
-            titleClassName="text-white"
-            subtitleClassName="text-white/90"
+            titleClassName="text"
+            subtitleClassName="text/90"
           />
         </FadeIn>
 
@@ -32,7 +32,7 @@ export function HowToHelp() {
                   <Icon name={option.icon} className="h-6 w-6" />
                 </div>
 
-                <h3 className="mt-4 text-lg font-bold text-white">
+                <h3 className="mt-4 text-lg font-bold text">
                   {option.title}
                 </h3>
 
