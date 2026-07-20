@@ -38,21 +38,23 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-surface-muted/80 bg-white/95 backdrop-blur-sm">
       <Container>
         <div className="flex h-16 items-center justify-between lg:h-20">
-          <Link
-            to="/"
-            className="flex flex-col items-center justify-center rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2"
-            aria-label={`${siteConfig.name} — Página inicial`}
-          >
-             <img
-              src="/logo.jpg"
-              alt={siteConfig.name}
-              className="h-16 w-auto"
-            />
+        <Link
+          to="/"
+          className="mx-auto flex flex-col items-center justify-center rounded-lg"
+          aria-label={`${siteConfig.name} — Página inicial`}
+        >
+          <img
+            src="/logo.jpg"
+            alt={siteConfig.name}
+            className="h-24 w-auto"
+          />
 
-            <span className="mt-1 text-center text-xs text-text-muted md:text-sm">
+          <div className="mt-3 rounded-full border border-brand-blue/30 bg-gradient-to-r from-brand-blue/10 to-brand-green/10 px-5 py-2 shadow-sm backdrop-blur-sm">
+            <span className="text-sm font-semibold tracking-wide text-brand-blue">
               Instituição Espírita de Amparo à Criança
             </span>
-          </Link>
+          </div>
+        </Link>
 
           <nav className="hidden items-center gap-1 lg:flex" aria-label="Navegação principal">
             {navLinks.map((link) => (
