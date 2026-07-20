@@ -4,7 +4,6 @@ import { Hero } from '@/components/sections/Hero'
 import { Stats } from '@/components/sections/Stats'
 import { About, Projects } from '@/components/sections/Projects'
 import { HowToHelp } from '@/components/sections/HowToHelp'
-import { Testimonials } from '@/components/sections/Testimonials'
 import { Gallery } from '@/components/sections/Gallery'
 
 export function HomePage() {
