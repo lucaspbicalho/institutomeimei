@@ -86,16 +86,14 @@ export function Header() {
           aria-label="Navegação mobile"
         >
           <Container className="flex flex-col gap-1 py-4">
-            {navLinks.map((link) => (
-              <a
-              key={link.href}
-              href={link.href}
-              onClick={closeMenu}
-              className="rounded-lg px-4 py-3 text-base font-medium text-text hover:bg-surface"
-            >
-              {link.label}
-            </a>
-            ))}
+          {navLinks.map((link) => (
+          <NavAnchor
+            key={link.href}
+            href={link.href}
+            label={link.label}
+            onClick={closeMenu}
+          />
+        ))}
              <Button href="/pix" variant="secondary" className="mt-2 w-full">
               Doar com PIX
             </Button>
