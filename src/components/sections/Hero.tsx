@@ -50,10 +50,6 @@ export function Hero() {
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-              <Button href="/pix" variant="primary">
-                Doar com PIX
-                <Icon name="arrow" className="h-4 w-4" />
-              </Button>
               <Button href="#o-que-fazemos" variant="outline">
                 O que fazemos
               </Button>
