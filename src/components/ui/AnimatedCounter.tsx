@@ -69,7 +69,6 @@ export function AnimatedCounter({
     <span ref={ref} className="tabular-nums">
       {prefix}
       {display}
-      {suffix}
     </span>
   )
 }
