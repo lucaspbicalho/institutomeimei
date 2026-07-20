@@ -3,6 +3,7 @@ import { useReducedMotion } from '@/hooks/useReducedMotion'
 
 interface AnimatedCounterProps {
   value: number
+  prefix?: string
   suffix?: string
   duration?: number
   formatLocale?: boolean
@@ -10,6 +11,7 @@ interface AnimatedCounterProps {
 
 export function AnimatedCounter({
   value,
+  prefix = '',
   suffix = '',
   duration = 2000,
   formatLocale = false,
@@ -65,6 +67,7 @@ export function AnimatedCounter({
 
   return (
     <span ref={ref} className="tabular-nums">
+      {prefix}
       {display}
       {suffix}
     </span>

@@ -13,6 +13,7 @@ export function Stats() {
               <li className="text-center">
                 <p className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
                   <AnimatedCounter
+                    prefix={stat.suffix}
                     suffix={stat.suffix}
                     value={stat.value}
                     formatLocale={stat.formatLocale}
