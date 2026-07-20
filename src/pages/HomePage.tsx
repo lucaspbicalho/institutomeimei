@@ -14,7 +14,6 @@ export function HomePage() {
       <About />
       <Projects />
       <HowToHelp />
-      <Testimonials />
       <Gallery />
     </>
   )
