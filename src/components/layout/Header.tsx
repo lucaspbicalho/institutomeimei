@@ -2,8 +2,8 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { navLinks, siteConfig } from '@/data/content'
 import { Container } from '@/components/ui/Container'
-import { Button } from '@/components/ui/Button'
 import { Icon } from '@/components/ui/Icon'
+import { Button } from '../ui/Button'
 
 function NavAnchor({ href, label, onClick }: { href: string; label: string; onClick?: () => void }) {
   if (href.startsWith('#')) {
@@ -61,6 +61,10 @@ export function Header() {
               <NavAnchor key={link.href} href={link.href} label={link.label} />
             ))}
           </nav>
+
+          <div className="hidden lg:block">
+            <Button href="/pix" variant="secondary">Doar com PIX</Button>
+          </div>
   
           <button
             type="button"
@@ -92,9 +96,6 @@ export function Header() {
               {link.label}
             </a>
             ))}
-            <Button href="/pix" variant="secondary" className="mt-2 w-full">
-              Doar com PIX
-            </Button>
           </Container>
         </nav>
       )}
