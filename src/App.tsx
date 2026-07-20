@@ -4,7 +4,7 @@ import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { HomeLayout } from '@/pages/HomePage'
 import { PixPage } from '@/pages/PixPage'
-import { Apadrinhe } from '@/pages/ApadrinhePage'
+import { ApadrinhePage } from '@/pages/ApadrinhePage'
 
 function PixLayout() {
   return (
@@ -12,7 +12,7 @@ function PixLayout() {
       <Header />
       <main id="main-content">
         <PixPage />
-        <Apadrinhe />
+        <ApadrinhePage />
       </main>
       <Footer />
     </>
@@ -26,6 +26,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomeLayout />} />
         <Route path="/pix" element={<PixLayout />} />
+        <Route path="/apadrinhe" element={<ApadrinhePage />} />
       </Routes>
     </BrowserRouter>
   )
