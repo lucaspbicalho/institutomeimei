@@ -26,24 +26,23 @@ export function HowToHelp() {
         <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {helpOptions.map((option, index) => (
             <FadeIn key={option.id} delay={index * 0.08}>
-              <li className="flex flex-col rounded-2xl bg-brand-blue p-6 shadow-md transition-shadow hover:shadow-lg">
+              <li className="flex flex-col rounded-lg bg-brand-blue-light p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg">
 
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white text-brand-blue">
+              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-brand-blue text-white">
                   <Icon name={option.icon} className="h-6 w-6" />
                 </div>
 
-                <h3 className="mt-4 text-lg font-bold text-white">
+                <h3 className="mt-4 text-lg font-bold text-text">
                   {option.title}
                 </h3>
 
-                <p className="mt-2 flex-1 text-sm text-white/90 leading-relaxed">
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-text-muted">
                   {option.description}
                 </p>
 
                 <Button
                   href={option.href}
-                  variant="outline"
-                  className="mt-6 w-full text-xs sm:text-sm border-white text-white hover:bg-white hover:text-brand-blue"
+                  className="mt-6 w-full bg-brand-blue text-white hover:bg-brand-blue-dark text-xs sm:text-sm"
                 >
                   {option.cta}
                 </Button>
