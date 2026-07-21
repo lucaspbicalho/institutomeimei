@@ -255,27 +255,51 @@ export const heroImages = {
 
 export const sponsorPlans = [
   {
-    value: 25,
-    title: 'R$ 25/mês',
-    description:
-      'Ajude com materiais pedagógicos, atividades educativas e recursos do dia a dia das crianças.',
-    recommended: false,
-    url: 'https://pag.ae/817Xs_nr5/button',
-  },
-  {
     value: 50,
     title: 'R$ 50/mês',
     description:
-      'Uma contribuição que ajuda diretamente na alimentação, educação e cuidado de uma criança.',
-    recommended: true,
+      'Ajude com materiais pedagógicos, atividades educativas e recursos do dia a dia das crianças.',
+    recommended: false,
     url: 'https://pag.ae/817XtuBKp/button',
   },
   {
     value: 100,
     title: 'R$ 100/mês',
     description:
+      'Uma contribuição que ajuda diretamente na alimentação, educação e cuidado de uma criança.',
+    recommended: true,
+    url: 'https://pag.ae/817Xu9vup/button',
+  },
+  {
+    value: 150,
+    title: 'R$ 150/mês',
+    description:
       'Uma parceria especial que amplia nosso impacto e fortalece nossos projetos sociais.',
     recommended: false,
-    url: 'https://pag.ae/817Xu9vup/button',
+    url: 'https://pag.ae/817XuKN-r/button',
+  },
+  {
+    value: 200,
+    title: 'R$ 200/mês',
+    description:
+      'Uma parceria especial que amplia nosso impacto e fortalece nossos projetos sociais.',
+    recommended: false,
+    url: 'https://pag.ae/817XvgmsM/button',
+  },
+  {
+    value: 300,
+    title: 'R$ 300/mês',
+    description:
+      'Uma parceria especial que amplia nosso impacto e fortalece nossos projetos sociais.',
+    recommended: false,
+    url: 'https://pag.ae/817XvY7sM/button',
+  },
+  {
+    value: 999,
+    title: 'R$ 999/mês',
+    description:
+      'Uma parceria especial que amplia nosso impacto e fortalece nossos projetos sociais.',
+    recommended: false,
+    url: 'https://pag.ae/817XvY7sM/button',
   },
 ]
