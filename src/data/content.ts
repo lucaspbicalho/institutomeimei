@@ -111,13 +111,13 @@ export const helpOptions: HelpOption[] = [
     href: '/pix',
   },
   {
-    id: 'voluntario',
-    title: 'Voluntariado',
+    id: 'apadrinhamento',
+    title: 'Apadrinhamento',
     description:
-      'Participe com seu tempo e talento em atividades educativas, eventos e projetos comunitários.',
-    icon: 'user-plus',
-    cta: 'Quero ser voluntário',
-    href: '#contato',
+      'Faça uma contribuição mensal e ajude a garantir educação, alimentação e acolhimento para nossas crianças.',
+    icon: 'heart-handshake',
+    cta: 'Quero apadrinhar',
+    href: '/apadrinhe',
   },
   {
     id: 'doacao-material',
@@ -135,7 +135,7 @@ export const helpOptions: HelpOption[] = [
       'Empresas e organizações podem apoiar projetos específicos e ampliar nosso impacto social.',
     icon: 'users',
     cta: 'Fale conosco',
-    href: '#contato',
+    href: 'https://wa.me/553188645299?text=Olá!%20Gostaria%20de%20conhecer%20as%20possibilidades%20de%20parceria%20com%20o%20Instituto%20Meimei.',
   },
 ]
 

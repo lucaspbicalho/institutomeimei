@@ -6,6 +6,7 @@ type IconName =
   | 'gift'
   | 'users'
   | 'user-plus'
+  | 'heart-hand'
   | 'facebook'
   | 'instagram'
   | 'youtube'
@@ -54,6 +55,32 @@ export function Icon({ name, className = 'h-5 w-5' }: IconProps) {
         <path d="M15 19c.5-2 2.5-3.5 5-3.5" stroke="currentColor" strokeWidth="1.5" fill="none" />
       </>
     ),
+    'heart-hand': (
+  <>
+    {/* Coração */}
+    <path
+      d="M12 12.8l-1.1-1C8.2 9.3 6.5 7.8 6.5 5.8A2.8 2.8 0 019.3 3c.9 0 1.8.4 2.4 1.1A3.2 3.2 0 0114.1 3a2.8 2.8 0 012.8 2.8c0 2-1.7 3.5-4.4 6l-.5.5z"
+      fill="currentColor"
+    />
+
+    {/* Mãos */}
+    <path
+      d="M5 14.5l2.5 2.2c.5.4 1.1.6 1.8.6h5.4c.8 0 1.5-.3 2.1-.8l2.2-2"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      fill="none"
+    />
+
+    <path
+      d="M4 13.5l2 1.5m14-1.5l-2 1.5"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+    />
+  </>
+),
     'user-plus': (
   <>
     <circle
