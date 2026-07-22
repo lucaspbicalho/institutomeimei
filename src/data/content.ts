@@ -115,7 +115,7 @@ export const helpOptions: HelpOption[] = [
     title: 'Apadrinhamento',
     description:
       'Faça uma contribuição mensal e ajude a garantir educação, alimentação e acolhimento para nossas crianças.',
-    icon: 'heart-handshake',
+    icon: 'heart-hand',
     cta: 'Quero apadrinhar',
     href: '/apadrinhe',
   },
