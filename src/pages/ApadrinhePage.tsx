@@ -50,10 +50,12 @@ export function ApadrinhePage() {
                   </span>
                 )}
 
-                <h3 className="text-2xl font-bold text-brand-blue">
-                  {plan.title}
-                </h3>
-
+                {plan.value > 0 && (
+                   <h3 className="text-2xl font-bold text-brand-blue">
+                    {plan.title}
+                  </h3>
+                )}
+        
                 <p className="mt-4 text-text-muted">
                   {plan.description}
                 </p>
@@ -63,7 +65,7 @@ export function ApadrinhePage() {
                   variant="primary"
                   className="mt-6 w-full"
                 >
-                  Quero apadrinhar
+                  {plan.value > 0 ? "Quero apadrinhar" : "Entrar em contato"}
                 </Button>
               </Card>
             ))}

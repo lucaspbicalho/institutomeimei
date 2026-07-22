@@ -295,11 +295,11 @@ export const sponsorPlans = [
     url: 'https://pag.ae/817XvY7sM/button',
   },
   {
-    value: 999,
-    title: 'R$ 999/mês',
+    value: 0,
+    title: 'R$ 0/mês',
     description:
-      'Uma parceria especial que amplia nosso impacto e fortalece nossos projetos sociais.',
+      'Caso nenhum dos planos atenda às suas necessidades ou se você preferir não realizar o pagamento com cartão de crédito, entre em contato conosco. Teremos o prazer de preparar um carnê para você.',                            
     recommended: false,
-    url: 'https://pag.ae/817XvY7sM/button',
+    url: 'https://wa.me/553188645299?text=Olá!%20Gostaria%20de%20solicitar%20um%20carnê%20para%20apadrinhar%20uma%20criança.',
   },
 ]
