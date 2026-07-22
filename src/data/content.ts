@@ -258,7 +258,7 @@ export const sponsorPlans = [
     value: 50,
     title: 'R$ 50/mês',
     description:
-      'Ajude com materiais pedagógicos, atividades educativas e recursos do dia a dia das crianças.',
+      'Contribua com materiais pedagógicos, atividades educativas e recursos essenciais para o dia a dia das crianças.',
     recommended: false,
     url: 'https://pag.ae/817XtuBKp/button',
   },
@@ -266,7 +266,7 @@ export const sponsorPlans = [
     value: 100,
     title: 'R$ 100/mês',
     description:
-      'Uma contribuição que ajuda diretamente na alimentação, educação e cuidado de uma criança.',
+      'Ajude a garantir alimentação, educação e acompanhamento para uma criança com mais segurança e continuidade.',
     recommended: false,
     url: 'https://pag.ae/817Xu9vup/button',
   },
@@ -274,7 +274,7 @@ export const sponsorPlans = [
     value: 150,
     title: 'R$ 150/mês',
     description:
-      'Uma parceria especial que amplia nosso impacto e fortalece nossos projetos sociais.',
+      'Fortaleça nossos projetos sociais, ampliando as oportunidades de desenvolvimento e acolhimento das crianças.',
     recommended: false,
     url: 'https://pag.ae/817XuKN-r/button',
   },
@@ -282,7 +282,7 @@ export const sponsorPlans = [
     value: 200,
     title: 'R$ 200/mês',
     description:
-      'Uma parceria especial que amplia nosso impacto e fortalece nossos projetos sociais.',
+      'Permita que mais crianças sejam atendidas com atividades educativas, apoio social e um ambiente seguro para crescer.',
     recommended: false,
     url: 'https://pag.ae/817XvgmsM/button',
   },
@@ -290,7 +290,7 @@ export const sponsorPlans = [
     value: 300,
     title: 'R$ 300/mês',
     description:
-      'Uma parceria especial que amplia nosso impacto e fortalece nossos projetos sociais.',
+      'Torne-se um grande parceiro do Instituto, contribuindo para a manutenção e expansão dos projetos que transformam vidas.',
     recommended: false,
     url: 'https://pag.ae/817XvY7sM/button',
   },
@@ -298,7 +298,7 @@ export const sponsorPlans = [
     value: 0,
     title: 'R$ 0/mês',
     description:
-      'Caso nenhum dos planos atenda às suas necessidades ou se você preferir não realizar o pagamento com cartão de crédito, entre em contato conosco. Teremos o prazer de preparar um carnê para você.',                            
+      'Não encontrou um plano ideal ou prefere não pagar com cartão? Entre em contato conosco e solicite um carnê. Ficaremos felizes em encontrar a melhor forma de receber sua contribuição.',                            
     recommended: false,
     url: 'https://wa.me/553188645299?text=Olá!%20Gostaria%20de%20solicitar%20um%20carnê%20para%20apadrinhar%20uma%20criança.',
   },
