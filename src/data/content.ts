@@ -267,7 +267,7 @@ export const sponsorPlans = [
     title: 'R$ 100/mês',
     description:
       'Uma contribuição que ajuda diretamente na alimentação, educação e cuidado de uma criança.',
-    recommended: true,
+    recommended: false,
     url: 'https://pag.ae/817Xu9vup/button',
   },
   {
