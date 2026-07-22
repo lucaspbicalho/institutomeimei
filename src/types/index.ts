@@ -23,7 +23,7 @@ export interface HelpOption {
   id: string
   title: string
   description: string
-  icon: 'heart' | 'hand' | 'gift' | 'users' | 'user-plus'
+  icon: 'heart' | 'hand' | 'gift' | 'users' | 'user-plus' | 'heart-hand'
   cta: string
   href: string
 }
